@@ -14,11 +14,12 @@ def step_impl(context, url):
 @step('hago click en el botón de "{nombre_boton}"')
 def step_impl(context, nombre_boton):
     elementos = {
-        "Registro": "//a[contains(@class,'ico-register')]",
+        "REGISTER": "//a[contains(@class,'ico-register')]",
         "Genero": "//input[@value='M']",
-        "registro": "///input[@name='register-button']",
-        "Contacto": "//a[text()='Contact us']",
-        "BTN_REGISTER_SUBMIT" : "//input[@name='register-button']"
+        "Continue": "//input[contains(@value,'Continue')]",
+        "LOG_IN": "//a[contains(@class,'ico-login')]",
+        "BTN_REGISTER_SUBMIT" : "//input[@name='register-button']",
+        "BTN_LOG_IN" : "//input[@value='Log in']"
     }
     xpath = elementos.get(nombre_boton)
 

@@ -10,4 +10,5 @@ class RegistrationLocators:
 
 
 class LoginLocators:
-    TXT_USER = "//input[@id='Email']"
+    TXT_USER = "//input[@name='Email']"
+    BTN_LOGIN = "//a[contains(@class,'ico-login')]"
